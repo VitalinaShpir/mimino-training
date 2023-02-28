@@ -1,0 +1,213 @@
+:root {
+
+    /* Colors */
+    --bg-color: #D8D8D8;
+    --dark-bg-txt-color: #121212;
+    --light-txt-color: #f7f7f7;
+    --black-color: #000000;
+    --white-color: #ffffff;
+    --grey-txt-color: #484848;
+    --middle-txt-color: #D8D7D7;
+  
+  
+  }
+  
+  body{
+    font-family: DM Sans, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .container {
+      min-width: 320px;
+      max-width: 428px;
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-left: auto;
+      margin-right: auto;
+  
+  
+      /* outline: 1px solid seagreen; */
+    }
+  }
+
+  /**
+    |============================
+    | ---------HEADER STYLES --------
+    |============================
+  */
+
+  .header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: var(--dark-bg-txt-color);
+    border-bottom: 0.5px solid rgba(247, 247, 247, 0.2);
+  }
+  .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.18em;
+    color: var(--light-txt-color);
+  }
+  .logo-down {
+    font-weight: 400;
+    font-size: 6px;
+    line-height: 8px;
+    letter-spacing: 0.18em;
+    color: var(--middle-txt-color);
+  }
+  
+  .nav-list,
+  .social-list {
+    display: none;
+  }
+  
+  .mobile-menu-icon {
+    fill: var(--light-txt-color);
+  }
+  .mobile-menu-btn {
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    border: none;
+    background-color: transparent;
+  }
+  
+  .mobile-menu {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--dark-bg-txt-color);
+    padding: 20px 24px;
+  
+    z-index: 100;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 500ms linear, visibility 500ms linear;
+  }
+  
+  .mobile-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  
+  .mobile-menu-btn-close {
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    top: 25px;
+    left: 20px;
+  }
+  .mobile-menu-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+  
+  .mobile-menu-links {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    color: var(--light-txt-color);
+  }
+  .social-list-icon {
+    stroke: var(--light-txt-color);
+  }
+  .mobile-menu-social-list {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  
+  /**
+    |============================
+    | ---------TABLET STYLES ----------
+    |============================
+  */
+  
+  @media screen and (min-width: 768px) {
+    .social-list {
+      position: absolute;
+      top: 27px;
+      right: 32px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .logo {
+      font-size: 20px;
+      line-height: 24px;
+    }
+    .logo-down {
+      font-size: 8px;
+      line-height: 10px;
+    }
+    .header-container {
+      display: flex;
+    }
+    .mobile-menu-social-list {
+      position: absolute;
+      top: 27px;
+      right: 32px;
+    }
+    .mobile-menu {
+      justify-content: flex-start;
+      gap: 240px;
+    }
+  }
+  
+  /**
+    |============================
+    | ----- DESKTOP STYLES -------
+    |============================
+  */
+  
+  @media screen and (min-width: 1440px) {
+    .header{
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+    .nav{
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+    .social-list{
+      position: static;
+    }
+    .mobile-menu-btn {
+      display: none;
+    }
+  
+    .nav-list {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      gap: 32px;
+    }
+    .nav-link {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: 0.05em;
+      color: var(--light-txt-color);
+    }
+  }
+  
