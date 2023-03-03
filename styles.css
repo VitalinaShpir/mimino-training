@@ -133,7 +133,7 @@ body {
 }
 
 .mobile-menu-icon {
-stroke: var(--light-txt-color);
+  stroke: var(--light-txt-color);
 }
 .mobile-menu-btn {
   position: absolute;
@@ -183,7 +183,7 @@ stroke: var(--light-txt-color);
   align-items: center;
   gap: 32px;
 }
-.modal-close-btn-icon{
+.modal-close-btn-icon {
   stroke: var(--light-txt-color);
 }
 
@@ -274,6 +274,18 @@ stroke: var(--light-txt-color);
     line-height: 18px;
     letter-spacing: 0.05em;
     color: var(--light-txt-color);
+    position: relative;
+    display: block;
+  }
+
+  .nav-link.current::after {
+    content: ".";
+    display: block;
+    font-size: 40px;
+    color: #f7f7f7;
+    position: absolute;
+    bottom: -5px;
+    right: 50%;
   }
 }
 
@@ -364,8 +376,7 @@ stroke: var(--light-txt-color);
   .hero-title {
     margin-bottom: 60px;
   }
-  .hero-txt{
+  .hero-txt {
     display: flex;
-
   }
 }
