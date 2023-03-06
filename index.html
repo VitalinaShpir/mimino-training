@@ -25,47 +25,101 @@
 
 </head>
 <body>
-    <header class="header">
-  <div class="container header-container">
-    <button data-menu-open class="mobile-menu-btn" type="button">
-      <svg class="mobile-menu-icon" width="28" height="28">
-        <use href="./images/icons.svg#icon-menu-open"></use>
-      </svg>
-    </button>
-    <nav class="nav">
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link current" href="./index.html">home</a>
+  <header class="header">
+    <div class="container header-container">
+      <button data-menu-open class="header-mobile-menu-btn" type="button">
+        <svg class="header-mobile-menu-icon" width="21" height="21">
+          <use href="./images/icons.svg#icon-menu-open"></use>
+        </svg>
+      </button>
+      <nav class="header-nav">
+        <ul class="header-nav-list">
+          <li class="header-nav-item">
+            <a class="header-nav-link current" href="./index.html">home</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="./hotel.html">hotel</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="./restaurant.html">restaurant</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="logo" href="./index.html"
+        >mimino <span class="logo-down">restaurant-hotel complex</span>
+      </a>
+      <ul class="header-social-list">
+        <li class="header-social-item">
+          <a href="https://www.instagram.com" target="_blank">
+            <svg class="header-social-list-icon" width="20" height="20">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./hotel.html">hotel</a>
+        <li class="header-social-item">
+          <a href="https://www.instagram.com" target="_blank">
+            <svg class="header-social-list-icon" width="20" height="20">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./room.html">restaurant</a>
+        <li class="header-social-item">
+          <a href="https://twitter.com/" target="_blank">
+            <svg class="header-social-list-icon" width="22" height="20">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
         </li>
       </ul>
-    </nav>
-    <a class="logo" href="./index.html"
+    </div>
+ 
+    
+    <div class="header-mobile-menu" data-menu>
+      
+      <a class="logo" href="./index.html"
       >mimino <span class="logo-down">restaurant-hotel complex</span>
     </a>
-    <ul class="social-list">
-      <li class="social-item">
-        <a href="">
-          <svg class="social-list-icon" width="20" height="20">
+  
+    <button
+    data-menu-close
+      type="button"
+      class="header-mobile-menu-btn-close header-modal-close-btn">
+      <svg class="header-modal-close-btn-icon" width="14" height="14">
+        <use href="./images/icons.svg#icon-menu-close"></use>
+      </svg>
+    </button>
+  
+  
+    <ul class="header-mobile-menu-list list">
+      <li class="header-mobile-menu-item">
+        <a class="header-mobile-menu-links" href="./index.html">home</a>
+      </li>
+      <li class="header-mobile-menu-item">
+        <a class="header-mobile-menu-links" href="./hotel.html">hotel</a>
+      </li>
+      <li class="header-mobile-menu-item">
+        <a class="header-mobile-menu-links active" href="./restaurant.html">restaurant</a>
+      </li>
+    </ul>
+    
+    <ul class="header-mobile-menu-social-list list">
+      <li class="header-social-list-item">
+        <a class="header-social-list-link" href="https://www.instagram.com" target="_blank">
+          <svg class="header-social-list-icon" width="20" height="20">
             <use href="./images/icons.svg#icon-instagram"></use>
           </svg>
         </a>
       </li>
-      <li class="social-item">
-        <a href="">
-          <svg class="social-list-icon" width="20" height="20">
+      <li class="header-social-list-item">
+        <a class="header-social-list-link" href="https://www.facebook.com/" target="_blank">
+          <svg class="header-social-list-icon" width="20" height="20">
             <use href="./images/icons.svg#icon-facebook"></use>
           </svg>
         </a>
       </li>
-      <li class="social-item">
-        <a href="">
-          <svg class="social-list-icon" width="22" height="20">
+      <li class="header-social-list-item">
+        <a class="header-social-list-link" href="https://twitter.com/" target="_blank">
+          <svg class="header-social-list-icon" width="20" height="20">
             <use href="./images/icons.svg#icon-twitter"></use>
           </svg>
         </a>
@@ -73,59 +127,6 @@
     </ul>
   </div>
 </header>
-
-<div class="mobile-menu" data-menu>
-
-  <a class="logo" href="./index.html"
-  >mimino <span class="logo-down">restaurant-hotel complex</span>
-</a>
-
-  <button
-    data-menu-close
-    type="button"
-    class="mobile-menu-btn-close modal-close-btn">
-    <svg class="modal-close-btn-icon" width="28" height="28">
-      <use href="./images/icons.svg#icon-menu-close"></use>
-    </svg>
-  </button>
-
-
-  <ul class="mobile-menu-list list">
-    <li class="mobile-menu-item">
-      <a class="mobile-menu-links" href="./index.html">home</a>
-    </li>
-    <li class="mobile-menu-item">
-      <a class="mobile-menu-links" href="">hotel</a>
-    </li>
-    <li class="mobile-menu-item">
-      <a class="mobile-menu-links active" href="">restaurant</a>
-    </li>
-  </ul>
-
-  <ul class="mobile-menu-social-list list">
-    <li class="social-list-item">
-      <a class="social-list-link" href="">
-        <svg class="social-list-icon" width="20" height="20">
-          <use href="./images/icons.svg#icon-instagram"></use>
-        </svg>
-      </a>
-    </li>
-    <li class="social-list-item">
-      <a class="social-list-link" href="">
-        <svg class="social-list-icon" width="20" height="20">
-          <use href="./images/icons.svg#icon-facebook"></use>
-        </svg>
-      </a>
-    </li>
-    <li class="social-list-item">
-      <a class="social-list-link" href="">
-        <svg class="social-list-icon" width="20" height="20">
-          <use href="./images/icons.svg#icon-twitter"></use>
-        </svg>
-      </a>
-    </li>
-  </ul>
-</div>
 
 <!-- -------------main content-------------- -->
 <main>
