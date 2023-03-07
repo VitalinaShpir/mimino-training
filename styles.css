@@ -74,7 +74,7 @@ body {
     max-width: 768px;
 
 
-    outline: 1px solid red;
+ 
   }
 }
 
@@ -82,7 +82,6 @@ body {
   .container {
    max-width: 1440px;
 
-    outline: 1px solid blue;
   }
 }
 
@@ -254,6 +253,11 @@ body {
     .header {
       padding-left: 32px;
       padding-right: 32px;
+      background-color: transparent;
+    }
+    .header.no-transparency{
+      background-color: rgba(12, 12, 12, 0.3);
+      backdrop-filter: blur(2px);
     }
     .header-container {
       width: 100%;
@@ -398,6 +402,63 @@ body {
     display: flex;
   }
 }
+
+/**
+    |============================
+    | ---------HERO desktop STYLES ----------
+    |============================
+  */
+
+  @media screen and (min-width: 1440px) {
+    .header {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+    .nav {
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+  
+    .mobile-menu-btn {
+      display: none;
+    }
+  
+    .nav-list {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      gap: 32px;
+    }
+    .nav-link {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: 0.05em;
+      color: var(--light-txt-color);
+      position: relative;
+      display: block;
+      transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  
+    .nav-link.current::after {
+      content: ".";
+      display: block;
+      font-size: 40px;
+      color: #f7f7f7;
+      position: absolute;
+      bottom: -5px;
+      right: 50%;
+    }
+    .nav-link:hover,
+    .nav-link:focus {
+      transform: translateY(-5px);
+    }
+  }
+
+  .txt-descr{
+    font-size: 40px;
+    color: var(--accent-color);
+  }
 
 /**
     |============================
