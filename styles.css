@@ -510,3 +510,182 @@ body {
 
 @media screen and (min-width: 1440px) {
 }
+
+
+
+/**
+    |============================
+    | -------------HERO STYLES-----------
+    |============================
+  */
+
+  .hero-section {
+    padding-top: 429px;
+    padding-bottom: 40px;
+    background-color: var(--main-black-color);
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 70.73%,
+        #121212 98.51%
+      ),
+      url(./images/mobile/home/home_building_mobile.jpg);
+    background-repeat: no-repeat;
+  
+    background-position: 50% 10%;
+  }
+  .hero-title {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: -0.02em;
+    color: var(--main-light-color);
+    margin-bottom: 24px;
+  }
+  .hero-txt-descr {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.05em;
+    color: var(--main-light-color);
+  }
+  .btn {
+    border: 0.8px solid var(--main-light-color);
+    border-radius: 32px;
+    background-color: transparent;
+    color: inherit;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    width: 132px;
+    height: 32px;
+  }
+  .hero-btns {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    margin-bottom: 66px;
+  }
+  
+  .hero-txt:first-child {
+    margin-bottom: 32px;
+  }
+  
+  /**
+      |============================
+      | ---------HERO TABLET STYLES ----------
+      |============================
+    */
+  
+  @media screen and (min-width: 768px) {
+    .hero-section {
+      padding-top: 429px;
+      padding-bottom: 40px;
+      background-color: var(--main-black-color);
+      background-image: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0) 70.73%,
+          #121212 98.51%
+        ),
+        url(./images/tablet/home/home_building_tablet.jpg);
+      background-repeat: no-repeat;
+  
+      background-position: 50% 10%;
+    }
+  
+    .hero-title {
+      margin-bottom: 60px;
+    }
+    .hero-txt {
+      display: flex;
+    }
+  }
+  
+  /**
+      |============================
+      | ---------HERO desktop STYLES ----------
+      |============================
+    */
+  
+    @media screen and (min-width: 1440px) {
+      .header {
+        padding-left: 32px;
+        padding-right: 32px;
+      }
+      .nav {
+        margin-top: auto;
+        margin-bottom: auto;
+      }
+    
+      .mobile-menu-btn {
+        display: none;
+      }
+    
+      .nav-list {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        gap: 32px;
+      }
+      .nav-link {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.05em;
+        color: var(--light-txt-color);
+        position: relative;
+        display: block;
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+    
+      .nav-link.current::after {
+        content: ".";
+        display: block;
+        font-size: 40px;
+        color: #f7f7f7;
+        position: absolute;
+        bottom: -5px;
+        right: 50%;
+      }
+      .nav-link:hover,
+      .nav-link:focus {
+        transform: translateY(-5px);
+      }
+    }
+  
+    .txt-descr{
+      font-size: 40px;
+      color: var(--accent-color);
+    }
+  
+  /**
+      |============================
+      | ---------RESTAURANT HERO STYLES ----------
+      |============================
+    */
+  
+
+  
+  /**
+      |============================
+      | ---------RESTAURANT HERO TABLET STYLES ----------
+      |============================
+    */
+  @media screen and (min-width: 768px) {
+  }
+  
+
+  /**
+      |============================
+      | ---------RESTAURANT DESKTOP STYLES ----------
+      |============================
+    */
+  
+
+  @media screen and (min-width: 1440px) {
+  }
+  
